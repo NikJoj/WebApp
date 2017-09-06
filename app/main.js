@@ -1,9 +1,9 @@
-var button=getElementById('two');
+var button=document.getElementById('two');
+const x = new XMLHttpRequest();
+const url = '/artcle-one';
 
-button.onclick=function() {
-	res.sendFile(path.join(__dirname,'Users/joji/Desktop/app/','article-one.html'));
-};
-
-app.get('/article-one', function (req, res) {
-  res.sendFile(path.join(__dirname,'Users/joji/Desktop/app/','article-one.html'));
-});
+button.onClick = function ()
+{
+	x.open('GET',url);
+	x.send();
+}
