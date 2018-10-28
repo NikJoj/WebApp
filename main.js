@@ -17,6 +17,18 @@ function moveRight()
 	console.log('value = '+left);
 }
 
+
+function moveLeft()
+{
+	left=left-10;
+	trial.style.marginLeft=left+'px';
+	if (left === -1450) {
+		left = 0;
+	}
+	console.log('value = '+left);
+}
+
+
 btn.onclick=function()
 {
 	trial.style.marginLeft='0px';
